@@ -1,8 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
 
 body{
 	color: #2c3e50;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	line-height: 2em;
+	padding-bottom: 20px;
+}
+
+pre {
+	margin-bottom: 30px;
 }
 
 a:hover, a:focus {
@@ -15,9 +26,13 @@ a:hover, a:focus {
 	padding-top: 10%;
 	padding-left: 4%;
 	padding-right: 4%;
-	background-color: #43354D;
 	color: #eee;
-	box-shadow: 1px 0px 2px #444;
+	background: url(/assets/media/back.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: right;
 }
 
 .sidebar-header {
@@ -46,9 +61,17 @@ a.nav-link:hover { color: #777 }
 
 #bio {
 	font-family: "Inconsolata", Courier, monospace;
-	font-size: 18px;
+	font-size: 22px;
+	font-weight: bold;
 	margin: 0 auto;
 	margin-bottom: 10px;
+	color: #0DD5FC;
+}
+
+#bio-small {
+	font-family: "Inconsolata", Courier, monospace;
+	font-size: 15px;
+	color: #fff;
 }
 
 #contact-list li .fa,
@@ -143,6 +166,12 @@ article.home h4 a:hover {
 .author .author-image {
   float: left;
   margin-right: 20px;
+}
+
+.img-border {
+	border: #fff solid 4px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px #000;
 }
 
 footer {

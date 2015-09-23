@@ -1,18 +1,21 @@
 <!-- sidebar.html -->
 <header class="sidebar-header" role="banner">
 	<a href="{{ site.BASE_PATH }}/">
-		<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" width="200px" height="200px"/>
+		<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-border" width="200px" height="200px"/>
 	</a>
 	<h3 class="title">
         <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
     </h3>
 </header>
 
-{% if site.author.bio %}
 <div id="bio" class="text-center">
-	{{ site.author.bio }}
+	Arindam Nandi<br>
 </div>
-{% endif %}
+<div id="bio-small" class="text-center">
+	MS Computer Science<br>
+	University at Buffalo<br>
+	Lover of video games, computers, good food and music<br><br>
+</div>
 
 <div id="contact-list" class="text-center">
 	<ul class="list-unstyled list-inline">
