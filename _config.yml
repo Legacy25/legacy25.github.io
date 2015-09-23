@@ -1,0 +1,35 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+kramdown:
+  input: GFM
+disqus: arindamnandi
+google_analytics: 67991455
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Arindam Nandi
+
+description: Pseudocode for existence
+author:
+  name: Arindam Nandi
+  email: arindamnandidbl@gmail.com	
+  github: Legacy25
+  twitter: arindamgooner
+  facebook: strider.legacy
+  linkedin: arindamnandi
+  bio: Arindam Nandi, MS Computer Science, University at Buffalo. Lover of video games, computers, good food and music.
+  email_md5: a33503d8bca3a4e97db29217fc4c06da
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH:
