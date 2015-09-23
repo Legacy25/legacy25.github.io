@@ -17,7 +17,7 @@ SQL, or Structured Query Language, is a <i>declarative</i> language. This means 
 For example, let's say we have a database of information about cars and manufacturers that participate in a racing championship. There are five tables, with schemas as listed below -
 
 ```
-Cars [ CID | Model | Manufacturer | Year | Power | Torque | Price ]
+Cars [ CID | Model | MID | Year | Power | Torque | Price ]
 
 Manufacturers [ MID | Manufacturer | Headquarters ]
 
