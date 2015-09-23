@@ -8,7 +8,8 @@ markdown: kramdown
 kramdown:
   input: GFM
 disqus: arindamnandi
-google_analytics: 67991455
+google_analytics: UA-67991455-1
+
 
 defaults:
   -
