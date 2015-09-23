@@ -57,7 +57,7 @@ Turns out, it does.
 
 The order of joins is the largest contributing force in selecting a good execution strategy. You ideally want to join the smallest table with the second smallest table, then the result with the third smallest table, and so on till you get to the largest table. This is because of the way joins are implemented as we will see in a later post.
 
-The second major concern is to reduce IO bandwidth. Disks are eras worth of time slower than memory. Unfortunately, tables almost always <i>have</i> to reside in files on the disk. For example, during Bob's query, the evaluator can very easily see that the only fields required from the Cars' relation is the CID amd the MID. It can safely ignore the rest of the columns when scanning through the table. When tables have a lot of columns, and only two or three of them are of interest in most queries, which is a quite common scenario, this is an easy optimization with big payoffs.
+The second major concern is to reduce IO bandwidth. Disks are eras worth of time slower than memory. Unfortunately, tables almost always <i>have</i> to reside in files on the disk. For example, during Bob's query, the evaluator can very easily see that the only fields required from the ```Cars``` relation is the ```CID``` and the ```MID```. It can safely ignore the rest of the columns when scanning through the table. When tables have a lot of columns, and only two or three of them are of interest in most queries, which is a quite common scenario, this is an easy optimization with big payoffs.
 
 There are other factors that come into play for optimization operations, like cost-based analysis. The objective always is to filter out as much of the data as soon as possible. 
 
