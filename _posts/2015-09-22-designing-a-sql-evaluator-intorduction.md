@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Designing a SQL Evaluator - Introduction
+comments: true
 categories: [Databases]
 tags: [SQL, Query Evaluator]
 ---
