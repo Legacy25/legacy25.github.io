@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Arindam Nandi</title>
+	<title>Designing a SQL Parser - Introduction</title>
 	
 	<meta name="author" content="Arindam Nandi">
 
@@ -155,58 +155,101 @@
 
 	<div class="col-sm-9 col-sm-offset-3">
 		<div class="page-header">
-  <h1>Arindam Nandi </h1>
+  <h1>Designing a SQL Parser - Introduction </h1>
 </div>
+	
+<article>
 
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   September 
+	   22nd,
+	     
+	   2015
+	 </span>
+	  <div class="article_body">
+	  <h1 id="code-sample">Code sample</h1>
 
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c">#!/usr/bin/python</span>
+<span class="lineno"> 2</span> <span class="kn">import</span> <span class="nn">os</span>
+<span class="lineno"> 3</span> <span class="kn">import</span> <span class="nn">sys</span>
+<span class="lineno"> 4</span> 
+<span class="lineno"> 5</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno"> 6</span> 	<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span> 	<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="lineno"> 9</span> 		<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+<span class="lineno">10</span> 			<span class="n">fields</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;|&#39;</span><span class="p">)</span>
+<span class="lineno">11</span> 			
+<span class="lineno">12</span> 			<span class="n">quantity</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fields</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+<span class="lineno">13</span> 			<span class="n">eprice</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fields</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+<span class="lineno">14</span> 			<span class="n">discount</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fields</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>
+<span class="lineno">15</span> 
+<span class="lineno">16</span> 			<span class="k">if</span><span class="p">(</span><span class="n">discount</span> <span class="o">&gt;</span> <span class="mf">0.05</span> <span class="ow">and</span> <span class="n">discount</span> <span class="o">&lt;</span> <span class="mf">0.07</span> <span class="ow">and</span> <span class="n">quantity</span> <span class="o">&lt;</span> <span class="mi">24</span><span class="p">):</span>
+<span class="lineno">17</span> 				<span class="nb">sum</span> <span class="o">+=</span> <span class="n">eprice</span> <span class="o">*</span> <span class="n">discount</span><span class="p">;</span>
+<span class="lineno">18</span> 
+<span class="lineno">19</span> 	<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+<span class="lineno">20</span> 
+<span class="lineno">21</span> 
+<span class="lineno">22</span> <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="lineno">23</span> 	<span class="n">main</span><span class="p">()</span></code></pre></div>
 
-<article class="home">
+	  </div>
 
-  <span class="post-date">
-    
-    September
-    22nd,
-    
-    2015
-  </span>
+		  
 
-  <h2>
-    <a href="/2015/09/22/designing-a-sql-parser-intorduction.html">Designing a SQL Parser - Introduction</a>
-  </h2>
+		  
 
-  <div>
-    
-    
-    <h1 id="code-sample">Code sample</h1>
+		<hr>
 
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Designing a SQL Parser - Introduction&via=arindamgooner"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
 
-    
-    
-  </div>
+      <section class="col-sm-6 author">
+        <img src="http://www.gravatar.com/avatar/a33503d8bca3a4e97db29217fc4c06da" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Arindam Nandi</h4>
+        <p class="author-bio">Computer Science Master's student at SUNY Buffalo, gamer, programmer and Arsenal fan</p>
+      </section>
+    </div>
 
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous disabled"><a>&larr; Previous</a></li>
+		  
+		  
+			<li class="next disabled"><a>Next &rarr;</a>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
 </article>
+<div class="clearfix"></div>
 
-<hr/>
-
-<ul class="pager"> 
-
-  
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  
-  
-  <li>
-    <span class="page_number">Page: 1 of 1</span>
-  </li>
-
-  
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  
-
-</ul>
 
 
 
