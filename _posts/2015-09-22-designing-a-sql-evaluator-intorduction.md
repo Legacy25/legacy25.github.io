@@ -14,7 +14,7 @@ Efficiently evaluating SQL is not trivial. In fact, its not even straightforward
 
 SQL, or Structured Query Language, is a <i>declarative</i> language. This means that the analyst using SQL to run queries on structured data specifies <i>what</i> data is required, rather than <i>how</i> to get that data. This not only makes the job of the analyst much easier, but also gives the evaluator a lot of leeway in deciding how best to go about answering that query.
 
-For example, let's say we have a database of information about cars and manufacturers that participate in a racing championship. There are four tables, with schemas as listed below -
+For example, let's say we have a database of information about cars and manufacturers that participate in a racing championship. There are five tables, with schemas as listed below -
 
 ```
 Cars [ CID | Model | Manufacturer | Year | Power | Torque | Price ]
