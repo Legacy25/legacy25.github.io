@@ -61,4 +61,4 @@ The second major concern is to reduce IO bandwidth. Disks are eras worth of time
 
 There are other factors that come into play for optimization operations, like cost-based analysis. The objective always is to filter out as much of the data as soon as possible. 
 
-In the next [post](http://legacy25.github.io/2015/09/23/designing-a-sql-evaluator-ast-optimizations.html), we will see how we can represent a SQL query as an algebra, called the Relational Algebra. This allows us to reason about SQL queries at a higher level of abstraction. Then we will see how to efficiently represent a SQL query as a tree called the Abstract Syntax Tree or the RA AST, and then use that as a basis for our otimizations.
+In the next [post]({% post_url 2015-09-23-designing-a-sql-evaluator-ast-optimizations %}), we will see how we can represent a SQL query as an algebra, called the Relational Algebra. This allows us to reason about SQL queries at a higher level of abstraction. Then we will see how to efficiently represent a SQL query as a tree called the Abstract Syntax Tree or the RA AST, and then use that as a basis for our otimizations.

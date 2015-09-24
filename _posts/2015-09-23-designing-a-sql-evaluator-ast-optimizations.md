@@ -8,7 +8,7 @@ tags: [SQL, Query Evaluator]
 
 ### Al-zebra
 
-This is the second of a series of posts about designing a SQL evaluator. The previous post is [here](http://legacy25.github.io/2015/09/22/designing-a-sql-parser-introduction.html).
+This is the second of a series of posts about designing a SQL evaluator. The previous post is [here]({% post_url 2015-09-22-designing-a-sql-evaluator-introduction %}).
 
 The traditional model that is used to structure data is the relational model. Various fields, or <i>attributes</i>, are grouped together into tuples. Sets or bags of these tuples form a relation. Fundamental operations that operate on relations are selection, projection, cross product, union and set difference. These operators are complete, meaning that an appropriate combination of these operators can express any relation in the basic relational algebra.
 
