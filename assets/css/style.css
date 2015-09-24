@@ -4,7 +4,7 @@
 
 body{
 	color: #2c3e50;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Inconsolata", Courier, monospace;
 }
 
 p {
@@ -12,8 +12,17 @@ p {
 	padding-bottom: 20px;
 }
 
+ol {
+	line-height: 2em;
+	padding-bottom: 20px;
+}
+
 pre {
 	margin-bottom: 30px;
+}
+
+sub {
+	font-family: "Inconsolata", Courier, monospace;
 }
 
 a:hover, a:focus {
@@ -27,12 +36,7 @@ a:hover, a:focus {
 	padding-left: 4%;
 	padding-right: 4%;
 	color: #eee;
-	background: url(/assets/media/back.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: right;
+	background: url(/assets/media/tile.jpg) repeat-y; 
 }
 
 .sidebar-header {
@@ -61,17 +65,18 @@ a.nav-link:hover { color: #777 }
 
 #bio {
 	font-family: "Inconsolata", Courier, monospace;
-	font-size: 22px;
+	font-size: 26px;
 	font-weight: bold;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	color: #0DD5FC;
+	text-transform: uppercase;
 }
 
 #bio-small {
 	font-family: "Inconsolata", Courier, monospace;
 	font-size: 15px;
-	color: #fff;
+	color: #888;
 }
 
 #contact-list li .fa,

@@ -2,6 +2,7 @@
 layout: post
 title: Abstract Syntax Trees and Optimizations
 comments: true
+shortinfo: An under the hood look at how queries are represented within the query processing system, and what kind of optimizations are done to make query execution fast.
 categories: [Databases]
 tags: [SQL, Query Evaluator]
 ---
@@ -60,7 +61,6 @@ We have the query, we pass it through JSQLParser, we extract all the relevant cl
 5. ORDER BY clause, which if exists, translates into an order by operator over the previous results
 6. UNION clause, concatenates two plain select queries  
 
-<br>
 Let's take a look at a more complex query, which is one of the TPC-H benchmark queries, TPCH-6...
 
 {% highlight SQL %}

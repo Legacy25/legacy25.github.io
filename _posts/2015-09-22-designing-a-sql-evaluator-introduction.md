@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Designing a SQL Evaluator - Introduction
+shortinfo: An introduction to what will be a series of posts about designing an efficient SQL query processor.
 comments: true
 categories: [Databases]
 tags: [SQL, Query Evaluator]
