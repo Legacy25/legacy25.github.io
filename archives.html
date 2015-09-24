@@ -1,0 +1,16 @@
+---
+layout: page
+title: Archives
+header: All posts by Arindam on github.io
+group: navigation
+---
+
+<div class="tab-content col-sm-9 col-xs-6">
+<ul class="list">
+{% for post in site.posts %}
+  <li>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
+
+<div class="clearfix"></div>
