@@ -26,10 +26,11 @@ author:
   twitter: arindamgooner
   facebook: strider.legacy
   linkedin: arindamnandi
-  bio: Arindam Nandi, MS Computer Science, University at Buffalo. Lover of video games, computers, good food and music.
+  bio: MS Computer Science, University at Buffalo. Lover of video games, computers, good food and music.
   email_md5: a33503d8bca3a4e97db29217fc4c06da
 
 rss_path: feed.xml
+about_path: about.html
 categories_path: categories.html
 tags_path: tags.html
 archives_path: archives.html

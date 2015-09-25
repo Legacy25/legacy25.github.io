@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
 
 body{
 	color: #2c3e50;
@@ -27,6 +27,25 @@ sub {
 
 a:hover, a:focus {
     text-decoration: none;
+}
+
+#about-container {
+	background: url(/assets/media/about.jpg) no-repeat;
+	background-position: top;
+	display: block;
+	height: 100vh;
+	overflow: hidden;
+	background-size: cover;
+	box-shadow: 0px 1px 5px #000;
+}
+
+#name-banner {
+	font-family: 'Righteous', sans-serif;
+	font-size: 20vmin;
+	color: #fff;
+	opacity: 0.9;
+	text-align: center;
+	padding-top: 30vh;
 }
 
 .sidebar {
@@ -64,18 +83,18 @@ a.nav-link i{
 a.nav-link:hover { color: #777 }
 
 #bio {
-	font-family: "Inconsolata", Courier, monospace;
+	font-family: "Righteous", sans-serif;
 	font-size: 26px;
-	font-weight: bold;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	color: #0DD5FC;
-	text-transform: uppercase;
 }
 
 #bio-small {
 	font-family: "Inconsolata", Courier, monospace;
 	font-size: 15px;
+	margin: 0 auto;
+	margin-bottom: 10px;
 	color: #888;
 }
 
@@ -87,7 +106,7 @@ article .share .btn {
   -webkit-transition:color .2s ease-out, background 1s ease-in;
   transition:color .2s ease-out, background 1s ease-in;
 }
-#contact-list li:hover .fa-twitter,
+#contact-list li:hover .fitwitter,
 article .share .twitter:hover {
 	color: #00ACEE;
 	border-color: #00ACEE;
