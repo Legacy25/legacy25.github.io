@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
 @import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body{
 	color: #2c3e50;
-	font-family: "Inconsolata", Courier, monospace;
+	font-family: 'Inconsolata', Courier, monospace;
 }
 
 p {
@@ -22,7 +23,7 @@ pre {
 }
 
 sub {
-	font-family: "Inconsolata", Courier, monospace;
+	font-family: 'Inconsolata', Courier, monospace;
 }
 
 a:hover, a:focus {
@@ -55,7 +56,30 @@ a:hover, a:focus {
 	padding-left: 4%;
 	padding-right: 4%;
 	color: #eee;
-	background: url(/assets/media/tile.jpg) repeat-y; 
+	background-color: #263238;
+}
+
+#bio {
+	font-size: 30px;
+	font-family: 'Inconsolata', Courier, monospace;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	color: #F44336;
+	text-transform: lowercase;
+}
+
+#bio-small {
+	font-family: 'Inconsolata', Courier, monospace;
+	font-size: 18px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.img-border {
+	/*border: #fff solid 4px;*/
+	border-radius: 100px;
+	/*box-shadow: 1px 1px 1px #000;*/
 }
 
 .sidebar-header {
@@ -72,6 +96,41 @@ a:hover, a:focus {
 	color: #fff;
 }
 
+#about-nav {
+	text-align: center;
+}
+
+#about-nav a {
+    display: inline-block;
+	color: white;
+	background: rgba(0, 0, 0, 0.6);
+	font-size: 4vmin;
+	padding: 2vmin;
+	width: 20vw;
+	margin-bottom: 5vh;
+	border-radius: 5px;
+}
+
+#about-nav a:hover {
+	background: rgba(0, 0, 0, 0.5);
+	color: #F50057;
+}
+
+.about-section {
+	padding-top: 10vh;
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
+
+.about-section ul {
+    list-style-type: none;
+}
+
+.logo {
+	width: 10%;
+	height: auto;
+}
+
 a.nav-link {
 	padding-bottom: 5px;
 	padding-top: 7px;
@@ -80,23 +139,7 @@ a.nav-link {
 a.nav-link i{
 	font-size: 16px;
 }
-a.nav-link:hover { color: #777 }
-
-#bio {
-	font-family: "Righteous", sans-serif;
-	font-size: 26px;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	color: #0DD5FC;
-}
-
-#bio-small {
-	font-family: "Inconsolata", Courier, monospace;
-	font-size: 15px;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	color: #888;
-}
+a.nav-link:hover { color: #777; }
 
 #contact-list li .fa,
 article .share .btn {
@@ -163,14 +206,14 @@ article.home div a, article.home pre a { color: #2c3e50; }
 article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }
 article img { max-width: 100%; }
 
-h1,h2,h3,h4,h5,h6 { font-family: "Open sans", sans-serif; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Inconsolata', Courier, monospace; }
 article.home h1,
 article.home h2,
 article.home h3,
 article.home h4,
 article.home h5,
 article.home h6 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #f2756a;
 }
 
@@ -192,15 +235,9 @@ article.home h4 a:hover {
   margin-right: 20px;
 }
 
-.img-border {
-	border: #fff solid 4px;
-	border-radius: 10px;
-	box-shadow: 1px 1px 1px #000;
-}
-
 footer {
 	padding-top: 15px;
-	font-family: 'Open Sans';
+	font-family: 'Roboto';
 }
 
 /* nav-vertical-tabs component */

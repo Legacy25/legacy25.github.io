@@ -3,11 +3,165 @@ layout: minimal
 tagline:
 ---
 
+
 <div id="about-container">
 	<div id="name-banner">
 		Arindam Nandi
 	</div>
+
 	<div id="about-nav">
-		
+		<a href="#meta">Meta</a>
+		<a href="#school">School</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+	</div>
+
+</div>
+
+<div class="about-section" id="meta">
+	<h1>Meta</h1>
+	<br>
+	<p>
+	Hi! I am a graduate student at UB. This is my blog. Its a nascent project, but I hope to post at least a few times a month! If you have a general interest in computers and computer science, hopefully you will enjoy some of the posts. Currently, I'm involved in some interesting database and programming languages projects, so posts will be related to that, as well as systems projects, programming stuff and random musings unrelated to computers. 
+	</p>
+	<h3>
+	Why a blog?
+	</h3>
+	<br>
+	<p>
+	This was a random idea on a particularly heavy day. I had once tried writing a blog post using blogspot, but never followed it up. I think that was because I didn't have much to say at the time that couldn't be said through social media.
+	</p>
+	<p>
+	One year of graduate studies has changed that. I have learned a lot in two short semesters, both in theory and also while hacking on some cool projects. I need to put down some of what I have learnt for posterity. Maybe most of it is reinventing the wheel, but maybe some people, including me, will benefit from reviewing these posts in the future.
+	</p>
+	<p>
+	Also, what makes this fun for me is that I like building websites. I like design in general, slick and functional interfaces. I am not the most creative type out there, but I like to dabble in it all the same. The workflow on GitHub pages using Jekyll is really fast, convenient and cool to work with. This is an experiment and an outlet at the same time. 
+	</p>
+</div>
+
+<div class="about-section" id="school">
+	<h1>School</h1>
+	<br>
+	<ul>
+		<li>
+			<h3>University at Buffalo, the State University of New York</h3>
+			Master of Science, Computer Science and Engineering | Fall 2014 - Spring 2016
+			<br>
+			<br>
+			Research experience
+			<ul>
+				<li>Probabilistic databases, <a href="http://odin.cse.buffalo.edu/research/mimir/">Mimir</a></li>
+			</ul>
+			<br>
+			Courses
+			<ul>
+				<li>Database Systems</li>
+				<li>Operating Systems</li>
+				<li>Distributed Systems</li>
+				<li>Languages and Runtimes for Big Data</li>
+				<li>Introduction to Machine Learning</li>
+				<li>Algorithms for Modern Computer Systems</li>
+				<li>Fundamentals of Programming Languages</li>
+			</ul>
+			<br>
+			<br>
+		</li>
+		<li>
+			<h3>West Bengal University of Technology, Kolkata, India</h3>
+			Bachelor of Technology, Computer Science and Engineering | Fall 2010 - Spring 2014
+			<br>
+			<br>
+			Courses
+			<ul>
+				<li>Data Structures</li>
+				<li>Algorithms</li>
+				<li>Computer Architecture</li>
+				<li>Compiler Theory</li>
+				<li>Computer Networking and Security</li>
+				<li>Operating Systems</li>
+				<li>Databases</li>
+				<li>Discrete Math</li>
+				<li>C / C++</li>
+				<li>Object Oriented Programming in Java</li>
+			</ul>
+			<br>
+			<br>
+		</li>
+		<li>
+			<h3>Don Bosco High School, Liluah, Kolkata, India</h3>
+			Indian School Certificate Examination | March 2010 
+		</li>
+	</ul>
+</div>
+
+<div class="about-section" id="projects">
+	<h1>Projects</h1>
+	<br>
+	<br>
+	<blockquote>
+		<p>Will be updated soon!</p>
+	</blockquote>
+</div>
+
+<div class="about-section" id="contact">
+	<h1>Contact</h1>
+	<br>
+	<ul>
+		<li>
+			<h4>Email</h4>
+			<h5>arindamnandidbl@gmail.com</h5>
+			<h5>arindamn@buffalo.edu</h5>
+			<hr>
+			<h4>Phone</h4>
+			<h5>(716) 907-2000</h5>
+			<p></p>
+		</li>
+	</ul>
+
+	<div id="contact-list" class="text-center">
+		<ul class="list-unstyled list-inline">
+			{% if site.author.github %}
+			<li>
+				<a class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}">
+					<i class="fa fa-github-alt fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			{% if site.author.linkedin %}
+			<li>
+				<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}">
+					<i class="fa fa-linkedin fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			{% if site.author.facebook %}
+			<li>
+				<a class="btn btn-default btn-sm" href="https://facebook.com/{{ site.author.facebook }}">
+					<i class="fa fa-facebook fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			{% if site.author.twitter %}
+			<li>
+				<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
+					<i class="fa fa-twitter fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			{% if site.author.email %}
+			<li>
+				<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
+					<i class="fa fa-envelope fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			<li>
+				<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
+					<i class="fa fa-rss fa-lg"></i>
+				</a>
+			</li>
+		</ul>
 	</div>
 </div>
+
+<br><br>

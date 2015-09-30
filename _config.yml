@@ -16,7 +16,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Arindam Nandi
+      title: The Pseudocode of Life
 
 description: Pseudocode for existence
 author:
