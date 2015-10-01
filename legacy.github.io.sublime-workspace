@@ -1,0 +1,892 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"ab",
+				"about-section"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"abou",
+				"about-nav"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"sa",
+				"sans-serif"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"San",
+				"sans-serif"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"background-",
+				"background-position"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"te",
+				"text-indent"
+			],
+			[
+				"f",
+				"font-family"
+			],
+			[
+				"ari",
+				"arindamnandi"
+			],
+			[
+				"sql",
+				"sqlfiles"
+			],
+			[
+				"n",
+				"nfields"
+			],
+			[
+				"si",
+				"sizeof"
+			],
+			[
+				"de",
+				"delimoffind"
+			],
+			[
+				"delim",
+				"delimoffsets"
+			],
+			[
+				"str",
+				"strtok_empty"
+			],
+			[
+				"tpch",
+				"tpchdb"
+			],
+			[
+				"tbl",
+				"tblfiles"
+			],
+			[
+				"r",
+				"rows"
+			],
+			[
+				"sq",
+				"sqlite3"
+			],
+			[
+				"times",
+				"times_sqlite"
+			],
+			[
+				"tim",
+				"times_sqlite"
+			],
+			[
+				"sub",
+				"subproclist"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"read",
+				"readlinefromfile"
+			],
+			[
+				"v",
+				"void"
+			],
+			[
+				"s",
+				"sans-serif"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"ord",
+				"orderdate"
+			],
+			[
+				"or",
+				"orderdate"
+			],
+			[
+				"t",
+				"totalprice"
+			],
+			[
+				"nati",
+				"nationkey"
+			],
+			[
+				"nat",
+				"nation"
+			],
+			[
+				"cus",
+				"customer"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "assets/css/style.css",
+			"settings":
+			{
+				"buffer_size": 4911,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/sidebar.html",
+			"settings":
+			{
+				"buffer_size": 1775,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 925,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "about.html",
+			"settings":
+			{
+				"buffer_size": 4914,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/minimal.html",
+			"settings":
+			{
+				"buffer_size": 4534,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/default.html",
+			"settings":
+			{
+				"buffer_size": 4855,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "legacy.github.io.sublime-project",
+			"settings":
+			{
+				"buffer_size": 231,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2015-10-01-google-mock-interview.md",
+			"settings":
+			{
+				"buffer_size": 4279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2015-09-23-designing-a-sql-evaluator-ast-optimizations.md",
+			"settings":
+			{
+				"buffer_size": 10030,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 199.0,
+		"last_filter": "rem",
+		"selected_items":
+		[
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ycmd",
+				"Ycmd: Settings - Default"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"",
+				"Set Syntax: Python"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 112.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/arindam/github-blog/legacy25.github.io",
+		"/home/arindam/github-blog/legacy25.github.io/_posts"
+	],
+	"file_history":
+	[
+		"/home/arindam/.config/sublime-text-3/Packages/User/jekyll.sublime-build",
+		"/home/arindam/.config/sublime-text-3/Packages/User/C++11.sublime-settings",
+		"/home/arindam/github-blog/legacy25.github.io/_includes/page.html",
+		"/home/arindam/test/quora.c",
+		"/home/arindam/test/tpch6.ll",
+		"/home/arindam/test/test.c",
+		"/home/arindam/test/test.ll",
+		"/home/arindam/ValkyrieProcessor/build.sh",
+		"/home/arindam/hyrise/build/SQLParser.h",
+		"/home/arindam/hyrise/docs/documentation.md",
+		"/home/arindam/hyrise/docs/syntax.md",
+		"/home/arindam/hyrise/docs/integration.md",
+		"/home/arindam/hyrise/docs/doxy.conf",
+		"/home/arindam/hyrise/README.md",
+		"/home/arindam/ValkyrieProcessor/main.cpp",
+		"/home/arindam/.config/sublime-text-3/Packages/YcmdCompletion/YcmdCompletion.sublime-settings",
+		"/home/arindam/llvm/llvmlitetest.py",
+		"/home/arindam/llvm/test.ll",
+		"/home/arindam/github-blog/legacy25.github.io/about.html",
+		"/home/arindam/github-blog/legacy25.github.io/assets/css/style.css",
+		"/home/arindam/DB/SQL-Parser/sql/tpch1.sql",
+		"/home/arindam/DB/SQL-Parser/sql/tpch3.sql",
+		"/home/arindam/DB/SQL-Parser/sql/tpch5.sql",
+		"/home/arindam/DB/SQL-Parser/sql/tpch6.sql",
+		"/home/arindam/DB/SQL-Parser/sql/tpch10.sql",
+		"/home/arindam/DB/SQL-Parser/sql/tpch12.sql",
+		"/home/arindam/DB/SQL-Parser/sql/tpch_schemas.sql",
+		"/home/arindam/github-blog/legacy25.github.io/_includes/sidebar.html",
+		"/home/arindam/DB/SQL-Parser/src/edu/buffalo/cse562/operators/ProjectScanOperator.java",
+		"/home/arindam/DB/SQL-Parser/src/edu/buffalo/cse562/Main.java",
+		"/home/arindam/mimir/mimircore/src/main/scala/mimir/Mimir.scala",
+		"/home/arindam/mimir/mimircore/src/main/scala/mimir/WebAPI.scala",
+		"/home/arindam/mimir/mimircore/src/main/scala/mimir/Database.scala",
+		"/home/arindam/mimir/mimircore/src/main/scala/mimir/lenses/Lens.scala",
+		"/home/arindam/mimir/mimircore/src/main/scala/mimir/lenses/LensManager.scala",
+		"/home/arindam/mimir/mimircore/src/main/scala/mimir/lenses/Lens",
+		"/home/arindam/github-blog/legacy25.github.io/index.html",
+		"/home/arindam/c/matrix.c",
+		"/home/arindam/github-blog/legacy25.github.io/_includes/default.html",
+		"/home/arindam/github-blog/legacy25.github.io/_layouts/page.html",
+		"/home/arindam/github-blog/legacy25.github.io/_layouts/minimal.html",
+		"/home/arindam/github-blog/legacy25.github.io/_config.yml",
+		"/home/arindam/github-blog/legacy25.github.io/_layouts/nav.html",
+		"/home/arindam/DB/p2/helloworld.S",
+		"/home/arindam/DB/p2/helloworld.c",
+		"/home/arindam/DB/p2/add.S",
+		"/home/arindam/DB/p2/add.c",
+		"/home/arindam/DB/p2/hello",
+		"/home/arindam/github-blog/legacy25.github.io/_posts/2015-09-23-designing-a-sql-evaluator-ast-optimizations.md",
+		"/home/arindam/github-blog/legacy25.github.io/assets/resources/font-awesome/css/font-awesome.css",
+		"/home/arindam/github-blog/legacy25.github.io/_posts/2015-09-22-designing-a-sql-evaluator-introduction.md",
+		"/home/arindam/github-blog/legacy25.github.io/categories.html",
+		"/home/arindam/github-blog/legacy25.github.io/archives.html",
+		"/home/arindam/DB/ValkyrieDB/test/sql/tpch1.sql",
+		"/home/arindam/DB/ValkyrieDB/test/sql/tpch3.sql",
+		"/home/arindam/DB/SQL-Parser/src/edu/buffalo/cse562/ParseTreeGenerator.java",
+		"/home/arindam/github-blog/legacy25.github.io/_posts/2015-09-22-designing-a-sql-evaluator-intorduction.md",
+		"/home/arindam/github-blog/legacy25.github.io/_posts/2015-09-23-designing-a-sql-evaluator-relational-algebra.md",
+		"/home/arindam/llvm/tpch6.S",
+		"/home/arindam/llvm/tpch6.py",
+		"/home/arindam/github-blog/legacy25.github.io/_layouts/post.html",
+		"/home/arindam/DB/ValkyrieDB/test/sql/tpch6.sql",
+		"/home/arindam/github-blog/legacy25.github.io/_includes/post.html",
+		"/home/arindam/github-blog/legacy25.github.io/_layouts/default.html",
+		"/home/arindam/github-blog/legacy25.github.io/.gitignore",
+		"/home/arindam/github-blog/legacy25.github.io/_includes/disqus.html",
+		"/home/arindam/github-blog/dbyll-master/assets/css/style.css",
+		"/home/arindam/github-blog/legacy25.github.io/_posts/2015-09-22-designing-a-sql-parser-intorduction.md",
+		"/home/arindam/github-blog/dbyll-master/tags.html",
+		"/home/arindam/github-blog/dbyll-master/_posts/2015-09-22-designing-a-sql-parser-intorduction.md",
+		"/home/arindam/github-blog/dbyll-master/_config.yml",
+		"/home/arindam/github-blog/dbyll-master/assets/js/app.js",
+		"/home/arindam/github-blog/dbyll-master/_layouts/default.html",
+		"/home/arindam/github-blog/dbyll-master/_layouts/page.html",
+		"/home/arindam/github-blog/dbyll-master/_layouts/post.html",
+		"/home/arindam/github-blog/dbyll-master/README.md",
+		"/home/arindam/github-blog/dbyll-master/categories.html",
+		"/home/arindam/github-blog/dbyll-master/index.html",
+		"/home/arindam/github-blog/dbyll-master/_includes/disqus.html",
+		"/home/arindam/github-blog/dbyll-master/_includes/default.html",
+		"/home/arindam/github-blog/dbyll-master/_includes/page.html",
+		"/home/arindam/github-blog/dbyll-master/_includes/post.html",
+		"/home/arindam/github-blog/dbyll-master/_includes/sidebar.html",
+		"/home/arindam/github-blog/dbyll-master/assets/resources/bootstrap/css/bootstrap.min.css",
+		"/home/arindam/github-blog/dbyll-master/assets/resources/font-awesome/css/font-awesome.css",
+		"/home/arindam/github-blog/legacy25.github.io/README.md",
+		"/home/arindam/DB/ValkyrieDB/test/time.py",
+		"/home/arindam/github-blog/poole/_posts/2015-09-22-building-a-sql-evaluator-introduction.md",
+		"/home/arindam/github-blog/poole/_sass/_syntax.scss",
+		"/home/arindam/github-blog/poole/_sass/_code.scss",
+		"/home/arindam/github-blog/poole/_includes/head.html",
+		"/home/arindam/github-blog/poole/about.md",
+		"/home/arindam/github-blog/poole/index.html",
+		"/home/arindam/github-blog/jekyll/_layouts/default.html",
+		"/home/arindam/github-blog/poole/styles.scss",
+		"/home/arindam/github-blog/poole/_posts/2013-12-31-whats-jekyll.md",
+		"/home/arindam/DB/ValkyrieDB/test/sql/tpch10.sql",
+		"/home/arindam/llvm/tpch6.c",
+		"/home/arindam/github-blog/poole/_sass/syntax.css",
+		"/home/arindam/github-blog/jekyll/_posts/2013-11-17-complement.md",
+		"/home/arindam/legacy25.github.io/index.html",
+		"/home/arindam/DB/JSqlParser/src/main/java/net/sf/jsqlparser/expression/DateValue.java",
+		"/home/arindam/DB/SQL-Parser/sql/tpch6nodate.sql",
+		"/home/arindam/llvm/test.c",
+		"/home/arindam/llvm/data/region.tbl",
+		"/home/arindam/llvm/data/nation.tbl",
+		"/home/arindam/github/Channel-Assigner/AssignFrequency.c",
+		"/home/arindam/DS/GroupMessenger/.gitignore",
+		"/home/arindam/DB/ValkyrieDB/test/tpch-data-setup.py",
+		"/media/arindam/4C42BDC942BDB7D2/Study/OS/confinstall.sh",
+		"/home/arindam/github/Channel-Assigner/GUI.py",
+		"/home/arindam/DB/ValkyrieDB/.gitignore",
+		"/home/arindam/Test/ValkyrieDB/test/tpch-data-setup.py",
+		"/home/arindam/DB/ValkyrieDB/test/ddl-schema.sql",
+		"/home/arindam/cse662/SQL-Parser/run.sh",
+		"/home/arindam/DB/SQL-Parser/run.sh",
+		"/home/arindam/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/arindam/cse662/SQL-Parser/Manifest.txt",
+		"/home/arindam/cse662/SQL-Parser/Manifest.mf",
+		"/home/arindam/cse662/Test-Framework/time.py",
+		"/home/arindam/cse662/Sqlite-TPCH/ddl-schema.sql",
+		"/home/arindam/cse662/Test-Framework/sql/tpch1.sql",
+		"/home/arindam/cse662/Test-Framework/sql/tpch3.sql",
+		"/home/arindam/cse662/Test-Framework/sql/tpch5.sql",
+		"/home/arindam/cse662/Test-Framework/sql/tpch6.sql",
+		"/home/arindam/cse662/Test-Framework/sql/tpch10.sql",
+		"/home/arindam/cse662/Test-Framework/sql/tpch12.sql",
+		"/home/arindam/sqlite-tpch/tpch1.out"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 81.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	\n",
+			":\n",
+			"initialize",
+			"crea",
+			"fa-fol",
+			"fa-",
+			"img",
+			"	\n",
+			"img",
+			"circle",
+			"img-circle",
+			"img-cir",
+			"bio",
+			";\n",
+			"googl",
+			"anal",
+			"google",
+			"padding-left:15px",
+			"padd",
+			";\n",
+			"ubun",
+			"img-circle",
+			"faceb",
+			"pinterest",
+			")\n",
+			";\n",
+			"{\n",
+			";\n",
+			"	\n",
+			")\n",
+			"		\n",
+			"= {}\n\n# 	print(\"SQLITE3 times\")\n\n# 	for f in files:\n# 		query = os.path.basename(f).split(\".sql\")[0]\n# 		times[query] = reduce(lambda x,y: x+y, map(lambda x: float(x), readlinefromfile(os.path.join(\"../SQL-Parser/output/\", query+\".stat\")).split(\"|\")))\n# 		print(\"{} to",
+			")\n",
+			";\n",
+			")\n",
+			"THE_CLASSPATH",
+			"/\n",
+			"\"\n",
+			"			;",
+			"Proc",
+			",\n",
+			"supplier",
+			" \n",
+			"h1vOzttGk9mP6fkUsTRUUx1mDgyNv0eM",
+			"image",
+			"heapbase",
+			");\n",
+			"    \n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n-- Unsupported features for this query\n--   INTERVAL (inlined into constant)\n--   ORDER BY (ignored)"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "assets/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4911,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1680,
+								1680
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS3/CSS3.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1248.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/sidebar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1775,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1748,
+								1748
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 151.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								434,
+								434
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_layouts/minimal.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3737,
+								3737
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_includes/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1500,
+								1500
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 403.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "legacy.github.io.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								220,
+								220
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_posts/2015-10-01-google-mock-interview.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3679,
+								3679
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 723.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "_posts/2015-09-23-designing-a-sql-evaluator-ast-optimizations.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CppYCM.2":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 88.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/jekyll.sublime-build",
+	"project": "legacy.github.io.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 404.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
