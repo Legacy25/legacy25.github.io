@@ -188,74 +188,24 @@
 	"buffers":
 	[
 		{
-			"file": "assets/css/style.css",
-			"settings":
-			{
-				"buffer_size": 4911,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/sidebar.html",
-			"settings":
-			{
-				"buffer_size": 1775,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_config.yml",
-			"settings":
-			{
-				"buffer_size": 925,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "about.html",
-			"settings":
-			{
-				"buffer_size": 4914,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_layouts/minimal.html",
-			"settings":
-			{
-				"buffer_size": 4534,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/default.html",
-			"settings":
-			{
-				"buffer_size": 4855,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "legacy.github.io.sublime-project",
-			"settings":
-			{
-				"buffer_size": 231,
-				"line_ending": "Unix"
-			}
-		},
-		{
+			"contents": "---\nlayout: post\ntitle: Google mock interview problem\ncomments: true\nshortinfo: Exploring better solutions to a brute force approach\ncategories: [Programming]\ntags: [Google, Mock Interview, Programming Exercise]\n---\n\nI had the chance to sit through a talk from a University at Buffalo alumnus working at Google. In addition to information about interviewing procedures at Google, we were given an example of the kind of problem we could be asked to solve in an interview. You only get forty-five minutes, and you have to code it up in proper syntax modulo imports and minor errors in a language like Java, Python or C++.\n\nI found the problem pretty interesting. Coming up with a brute force solution proved to be quite trivial and could be coded up in about thirty minutes. In this post though, I want to explore better solutions.\n\n### The problem\n\nImagine you have a file with a list of imaginary movie titles like this -\n\n```\nto sir with love\nlove story\nlove in the time of war\nwar never changes\nstory that ends with a twist\nchanges that come\nhave a heart\nheart break\n```\n\nAll words are lower-cased to avoid trivial toUpper and toLower conversion inconveniences. The objective is to find the length of the longest possible string you can get, by joining together movie titles in such a way that the next movie in the sequence begins with the same word as the word with which the previous ends.\n\nFor example, ```to sir with love``` and ```love story``` can combine to form ```to sir with love story```. Our objective is to find the longest possible chain and output its length. For this example, that would be 59 for the quite unintelligible string -\n\n```\nto sir with love in the time of war never changes that come\n```\n\n### Brute Force FTW\n\nIts pretty straightforward to come up with a brute force solution for this.\n\n1. Read in the list and objectify each title into a class called, lets say ```MovieTitle``` with attributes ```length```, ```firstWord``` and ```lastWord```. We then have a list of ```MovieTitle```.\n2. Build a data structure to map the first word of each movie to a list of titles that begin with that same word. In Java, a possible data-structure for this would be ```HashMap<String, ArrayList<MovieTitle>>```, in Python maybe a dictionary of words to lists of strings.\n3. Define a function that computes the longest possible chain for a particular title. We can use recursion to make our lives simpler.\n\nLet's call the recursive function ```longestPossibleChain```. How can we define such a function?\n\nBelow is one simple solution.\n\n``` java\nint longestPossibleChain(MovieTitle m) {\n	/* Minimum possible match length is the length of the title itself */\n	int len = m.getLength();	\n\n	/* Get a list of possible matches */\n	ArrayList<MovieTitle> possibleMatches = firstWordMap.get(m.getLastWord());\n					\n	/* Base case */\n	if(possibleMatches == null)\n		return len;\n\n	/* The common prefix, the last word of the first title and the first word of the second */\n	int common = m.getLastWord().length();\n\n	/* Get the longest chain for all titles that match */\n	int max = 0;\n	\n	for(MovieTitle mov : possibleMatches) {\n		int match = longestPossibleChain(mov) - common;\n		if(match > max)\n			max = match;\n	}\n	\n	return len + max;\n}	\n```\n\nThis does not take into account circular cases. It would be non-terminating if there were titles like ```love is war``` and ```war is love```, but since the expected behaviour is not defined for this case, we can ignore it for the moment.\n\n### Analyze that!\n\nLets say we have ```n``` movie titles. We will have to iterate over ```n``` movie titles, doing a complete breadth-first search on each of trees rooted at those elements, resulting in ```O(n*(n+E))``` complexity, where E is dependent on the possible chains.\n\nClearly this is not good. Let's see if we can do better.\n\n### Memoization\n\nThe first obvious thing to realize is that ```longestPossibleChain``` can be called several times on the same title, and recomputing it everytime is wasteful. We can cache the result for each ```MovieTitle``` in an attribute defined within the class itself. This is an optimization technique common in recursive programming called memoization. We require ```O(n)``` extra space, but running time is much faster, although asymptotically it doesn't make a difference.\n\n### Tree Traversal?",
 			"file": "_posts/2015-10-01-google-mock-interview.md",
+			"file_size": 4326,
+			"file_write_time": 130882010065556324,
 			"settings":
 			{
-				"buffer_size": 4279,
+				"buffer_size": 4325,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_posts/2015-09-23-designing-a-sql-evaluator-ast-optimizations.md",
+			"contents": "",
+			"file": "/home/arindam/test/ladan",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
-				"buffer_size": 10030,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -322,6 +272,14 @@
 	],
 	"file_history":
 	[
+		"/home/arindam/github-blog/legacy25.github.io/_posts/2015-09-23-designing-a-sql-evaluator-ast-optimizations.md",
+		"/home/arindam/github-blog/legacy25.github.io/legacy.github.io.sublime-project",
+		"/home/arindam/github-blog/legacy25.github.io/_includes/default.html",
+		"/home/arindam/github-blog/legacy25.github.io/_layouts/minimal.html",
+		"/home/arindam/github-blog/legacy25.github.io/about.html",
+		"/home/arindam/github-blog/legacy25.github.io/_config.yml",
+		"/home/arindam/github-blog/legacy25.github.io/_includes/sidebar.html",
+		"/home/arindam/github-blog/legacy25.github.io/assets/css/style.css",
 		"/home/arindam/.config/sublime-text-3/Packages/User/jekyll.sublime-build",
 		"/home/arindam/.config/sublime-text-3/Packages/User/C++11.sublime-settings",
 		"/home/arindam/github-blog/legacy25.github.io/_includes/page.html",
@@ -340,8 +298,6 @@
 		"/home/arindam/.config/sublime-text-3/Packages/YcmdCompletion/YcmdCompletion.sublime-settings",
 		"/home/arindam/llvm/llvmlitetest.py",
 		"/home/arindam/llvm/test.ll",
-		"/home/arindam/github-blog/legacy25.github.io/about.html",
-		"/home/arindam/github-blog/legacy25.github.io/assets/css/style.css",
 		"/home/arindam/DB/SQL-Parser/sql/tpch1.sql",
 		"/home/arindam/DB/SQL-Parser/sql/tpch3.sql",
 		"/home/arindam/DB/SQL-Parser/sql/tpch5.sql",
@@ -349,7 +305,6 @@
 		"/home/arindam/DB/SQL-Parser/sql/tpch10.sql",
 		"/home/arindam/DB/SQL-Parser/sql/tpch12.sql",
 		"/home/arindam/DB/SQL-Parser/sql/tpch_schemas.sql",
-		"/home/arindam/github-blog/legacy25.github.io/_includes/sidebar.html",
 		"/home/arindam/DB/SQL-Parser/src/edu/buffalo/cse562/operators/ProjectScanOperator.java",
 		"/home/arindam/DB/SQL-Parser/src/edu/buffalo/cse562/Main.java",
 		"/home/arindam/mimir/mimircore/src/main/scala/mimir/Mimir.scala",
@@ -360,17 +315,13 @@
 		"/home/arindam/mimir/mimircore/src/main/scala/mimir/lenses/Lens",
 		"/home/arindam/github-blog/legacy25.github.io/index.html",
 		"/home/arindam/c/matrix.c",
-		"/home/arindam/github-blog/legacy25.github.io/_includes/default.html",
 		"/home/arindam/github-blog/legacy25.github.io/_layouts/page.html",
-		"/home/arindam/github-blog/legacy25.github.io/_layouts/minimal.html",
-		"/home/arindam/github-blog/legacy25.github.io/_config.yml",
 		"/home/arindam/github-blog/legacy25.github.io/_layouts/nav.html",
 		"/home/arindam/DB/p2/helloworld.S",
 		"/home/arindam/DB/p2/helloworld.c",
 		"/home/arindam/DB/p2/add.S",
 		"/home/arindam/DB/p2/add.c",
 		"/home/arindam/DB/p2/hello",
-		"/home/arindam/github-blog/legacy25.github.io/_posts/2015-09-23-designing-a-sql-evaluator-ast-optimizations.md",
 		"/home/arindam/github-blog/legacy25.github.io/assets/resources/font-awesome/css/font-awesome.css",
 		"/home/arindam/github-blog/legacy25.github.io/_posts/2015-09-22-designing-a-sql-evaluator-introduction.md",
 		"/home/arindam/github-blog/legacy25.github.io/categories.html",
@@ -448,8 +399,7 @@
 		"/home/arindam/cse662/Test-Framework/sql/tpch5.sql",
 		"/home/arindam/cse662/Test-Framework/sql/tpch6.sql",
 		"/home/arindam/cse662/Test-Framework/sql/tpch10.sql",
-		"/home/arindam/cse662/Test-Framework/sql/tpch12.sql",
-		"/home/arindam/sqlite-tpch/tpch1.out"
+		"/home/arindam/cse662/Test-Framework/sql/tpch12.sql"
 	],
 	"find":
 	{
@@ -468,6 +418,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			">\n",
 			"	\n",
 			":\n",
 			"initialize",
@@ -533,226 +484,24 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4911,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1680,
-								1680
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS3/CSS3.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1248.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_includes/sidebar.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1775,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1748,
-								1748
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 151.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "_config.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 925,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								434,
-								434
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "about.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4914,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3,
-								3
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "_layouts/minimal.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4534,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3737,
-								3737
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 117.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "_includes/default.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4855,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1500,
-								1500
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 403.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "legacy.github.io.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 231,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								220,
-								220
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "_posts/2015-10-01-google-mock-interview.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4279,
+						"buffer_size": 4325,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3679,
-								3679
+								4315,
+								4315
 							]
 						],
 						"settings":
@@ -760,19 +509,19 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 723.0,
+						"translation.y": 780.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "_posts/2015-09-23-designing-a-sql-evaluator-ast-optimizations.md",
+					"buffer": 1,
+					"file": "/home/arindam/test/ladan",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10030,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -785,15 +534,13 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

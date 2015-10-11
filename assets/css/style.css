@@ -280,3 +280,7 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+code {
+	font-family: 'Inconsolata', Courier, monospace;
+	font-size: small;
+}
