@@ -16,7 +16,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: The Pseudocode of Life
+      title: The (p)sudo-code
 
 description: Pseudocode for existence
 author:
