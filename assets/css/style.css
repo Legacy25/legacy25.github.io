@@ -117,13 +117,27 @@ a:hover, a:focus {
 }
 
 .about-section {
-	padding-top: 10vh;
-	padding-left: 20vw;
-	padding-right: 20vw;
+	padding: 10vh 10vh 0 10vh;
+	margin: 0 auto;
+	max-width: 1000px;
 }
 
 .about-section ul {
     list-style-type: none;
+}
+
+.about-section h1, h2, h3, h4 {
+	color: #F50057;
+}
+
+.largepara {
+	font-size: large;
+	line-height: 200%;
+}
+
+.about-pic {
+	width: 100%;
+	height: 100%;
 }
 
 .logo {

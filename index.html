@@ -1,74 +1,154 @@
 ---
-layout: page
+layout: minimal
 tagline:
 ---
 
-{% for post in paginator.posts %}
 
-<article class="home">
+<div id="about-container">
+	<div id="name-banner">
+		Arindam Nandi
+	</div>
 
-  <span class="post-date">
-    {% assign d = post.date | date: "%d" | plus:'0' %}
-    {{ post.date | date: "%B" }}
-    {% case d %}
-    {% when 1 or 21 or 31 %}{{ d }}st,
-    {% when 2 or 22 %}{{ d }}nd,
-    {% when 3 or 23 %}{{ d }}rd,
-    {% else %}{{ d }}th,
-    {% endcase %}
-    {{ post.date | date: "%Y" }}
-  </span>
+	<div id="about-nav">
+		<a href="#about">About</a>
+		<a href="/blog/">Blog</a>
+		<a href="#contact">Contact</a>
+	</div>
 
-  <h2>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="about-section">
+	<img class="about-pic" src="assets/media/me.jpg">
+</div>
+<div class="about-section" id="about">
+	<h1>About</h1>
+	<br>
+	<p class="largepara">
+		Hi! <br><br> My name is Arindam and I am a Computer Science graduate student at the University at Buffalo. I am pursuing my Master of Science degree with a thesis based on research on probabilistic databases. I graduated from the West Bengal University of Technology, Kolkata, India with a Bachelor of Technology degree in Computer Science. I have an interest in application and systems programming. I also like playing video games, banging some tunes on a piano and watching football. I am graduating in May 2016 and looking for full time Software Development positions. You can find my resume <a href="/assets/media/Resume.pdf">here</a>.
+	</p> 
+</div>
+<div class="about-section" id="school">
+	<h1>School</h1>
+	<br>
+	<ul>
+		<li>
+			<h3>University at Buffalo, the State University of New York</h3>
+			Master of Science, Computer Science and Engineering | CGPA 4.0 / 4.0 | Fall 2014 - Spring 2016
+			<br>
+			<br>
+			<ul>
+			<li>
+			<h4>Research experience</h4>
+			<p>
+				I have been working with <a href="http://odin.cse.buffalo.edu/people/oliver_kennedy.html">Professor Oliver Kennedy</a> at UB on <a href="http://odin.cse.buffalo.edu/research/mimir/">Mimir</a>, an ETL tool that makes data analytics easier by streamlining the data cleaning process. My work on this project began as a summer assistantship developing new features for the tool including statistical metrics for query results and a web interface for faster and easier use.
+			</p>
+			<p>
+				Subsequently, I began working on efficient join strategies in Mimir, which became the topic of my Master's Thesis. There is a paper currently under submission for SIGMOD 2016. <a href="http://arxiv.org/abs/1601.00073">Arxiv</a>
+			</p>
+			</li>
+			<li>
+			<h4>Courses</h4>
+			<p>
+				Database Systems, Operating Systems, Distributed Systems, Languages and Runtimes for Big Data, Introduction to Machine Learning, Algorithms for Modern Computer Systems, Fundamentals of Programming Languages
+			</p>
+			</li>
+			</ul>
+		</li>
+		<br>
+		<br>
+		<li>
+			<h3>West Bengal University of Technology, Kolkata, India</h3>
+			Bachelor of Technology, Computer Science and Engineering | CGPA 8.17 / 10.00 | Fall 2010 - Spring 2014
+			<br>
+			<br>
+			<ul>
+				<li>
+					<h4>Courses</h4>
+					<p>
+						Data Structures and Algorithms, Computer Architecture, Compiler Theory, Computer Networking and Security, Theory of Computation, Introduction to Artificial Intelligence, Information Theory, Discrete Math, Software Engineering
+					</p>
+				</li>
+			</ul>
+		</li>
+		<br>
+		<br>
+		<li>
+			<h3>Don Bosco School, Liluah, Kolkata, India</h3>
+			High School | Indian School Certificate Examination | 91.00% | March 2010 
+		</li>
+	</ul>
+</div>
 
-  <div>
-    {% if post.fullview %}
-    {{ post.content }}
-    {% else %}
-    {% if post.shortinfo %}
-    {{ post.shortinfo }}
-    {% elsif post.description %}
-    {{ post.description }}
-    {% else %}
-    {{ post.excerpt }}
-    {% endif %}
-    {% endif %}
-  </div>
+<div class="about-section" id="projects">
+	<h1>Projects</h1>
+	<br>
+	<br>
+	<blockquote>
+		<p>Will be updated with detailed information. Meanwhile, you can check out some of the stuff I have done on <a href="https://github.com/legacy25">GitHub</a> or on <a href="https://www.linkedin.com/in/arindamnandi">LinkedIn</a></p>
+	</blockquote>
+</div>
 
-</article>
-{% endfor %}
-<hr/>
+<div class="about-section" id="contact">
+	<h1>Contact</h1>
+	<br>
+	<h4>Email</h4>
+	<h5>arindamnandidbl@gmail.com</h5>
+	<h5>arindamn@buffalo.edu</h5>
+	<hr>
+	<h4>Phone</h4>
+	<h5>+1 (716) 907-2000</h5>
+	<hr>
+	<h4>Resume</h4>
+	<a href="/assets/media/Resume.pdf">PDF</a>
+	<br>
 
-<ul class="pager"> 
+	<div id="contact-list" class="text-center">
+		<ul class="list-unstyled list-inline">
+			{% if site.author.github %}
+			<li>
+				<a class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}">
+					<i class="fa fa-github-alt fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			{% if site.author.linkedin %}
+			<li>
+				<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}">
+					<i class="fa fa-linkedin fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			{% if site.author.facebook %}
+			<li>
+				<a class="btn btn-default btn-sm" href="https://facebook.com/{{ site.author.facebook }}">
+					<i class="fa fa-facebook fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			{% if site.author.twitter %}
+			<li>
+				<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
+					<i class="fa fa-twitter fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			{% if site.author.email %}
+			<li>
+				<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
+					<i class="fa fa-envelope fa-lg"></i>
+				</a>
+			</li>
+			{% endif %}
+			<li>
+				<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
+					<i class="fa fa-rss fa-lg"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
 
-  {% if paginator.previous_page %}
-  <li class="previous">
-    {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
-    {% else %}
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
-    {% endif %}
-  </li>
-  {% else %}
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  {% endif %}
-  
-  <li>
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  </li>
-
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
-  </li>
-  {% else %}
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  {% endif %}
-
-</ul>
+<br><br>

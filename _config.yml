@@ -1,7 +1,7 @@
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
 paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
+paginate_path: "blog/page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
@@ -16,9 +16,9 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: The (p)sudo-code
+      title: Arindam Nandi
 
-description: Pseudocode for existence
+description: Arindam Nandi's technical blog
 author:
   name: Arindam Nandi
   email: arindamnandidbl@gmail.com	
@@ -30,9 +30,10 @@ author:
   email_md5: a33503d8bca3a4e97db29217fc4c06da
 
 rss_path: feed.xml
-about_path: about.html
+about_path: index.html
 categories_path: categories.html
 tags_path: tags.html
 archives_path: archives.html
+blog_path: blog/index.html
 
 BASE_PATH:
